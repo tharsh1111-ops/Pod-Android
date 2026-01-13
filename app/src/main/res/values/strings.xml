@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Podcast Search</string>
+    <string name="search_podcasts">Search podcasts...</string>
+    <string name="search">Search</string>
+    <string name="trending">Trending</string>
+    <string name="recent">Recent</string>
+    <string name="trending_podcasts">Trending Podcasts</string>
+    <string name="recent_episodes">Recent Episodes</string>
+    <string name="view_episodes">View Episodes</string>
+    <string name="listen">Listen</string>
+    <string name="podcast_artwork">Podcast Artwork</string>
+    <string name="episode_artwork">Episode Artwork</string>
+</resources>

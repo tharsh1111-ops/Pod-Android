@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="accent">#667eea</color>
+    <color name="background">#F5F5F5</color>
+    <color name="black">#000000</color>
+    <color name="error">#F44336</color>
+    <color name="primary">#667eea</color>
+    <color name="primary_dark">#764ba2</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="white">#FFFFFF</color>
+    <string name="app_name">Podcast Search</string>
+    <string name="episode_artwork">Episode Artwork</string>
+    <string name="listen">Listen</string>
+    <string name="podcast_artwork">Podcast Artwork</string>
+    <string name="recent">Recent</string>
+    <string name="recent_episodes">Recent Episodes</string>
+    <string name="search">Search</string>
+    <string name="search_podcasts">Search podcasts...</string>
+    <string name="trending">Trending</string>
+    <string name="trending_podcasts">Trending Podcasts</string>
+    <string name="view_episodes">View Episodes</string>
+    <style name="Theme.PodcastSearch" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="android:statusBarColor">@color/primary</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>

@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "com.podcast.search.app-mergeDebugResources-3:/layout/activity_main.xml",
+        "source": "com.podcast.search.app-main-6:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.podcast.search.app-mergeDebugResources-3:/layout/item_podcast.xml",
+        "source": "com.podcast.search.app-main-6:/layout/item_podcast.xml"
+    },
+    {
+        "merged": "com.podcast.search.app-mergeDebugResources-3:/layout/item_episode.xml",
+        "source": "com.podcast.search.app-main-6:/layout/item_episode.xml"
+    }
+]
