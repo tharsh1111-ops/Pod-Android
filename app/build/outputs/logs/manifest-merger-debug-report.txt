@@ -101,9 +101,9 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\thars\.gradle\cach
 	android:label
 		ADDED from C:\AndroidProjects\PodcastAppAndroid\app\src\main\AndroidManifest.xml:10:9-41
 	android:roundIcon
-		ADDED from C:\AndroidProjects\PodcastAppAndroid\app\src\main\AndroidManifest.xml:11:9-61
+		ADDED from C:\AndroidProjects\PodcastAppAndroid\app\src\main\AndroidManifest.xml:11:9-63
 	android:icon
-		ADDED from C:\AndroidProjects\PodcastAppAndroid\app\src\main\AndroidManifest.xml:9:9-56
+		ADDED from C:\AndroidProjects\PodcastAppAndroid\app\src\main\AndroidManifest.xml:9:9-58
 	android:allowBackup
 		ADDED from C:\AndroidProjects\PodcastAppAndroid\app\src\main\AndroidManifest.xml:8:9-35
 	android:theme
