@@ -5,28 +5,20 @@ import com.google.gson.annotations.SerializedName
 data class Episode(
     @SerializedName("trackId")
     val id: Long,
-    
     @SerializedName("trackName")
     val title: String?,
-    
     @SerializedName("description")
     val description: String?,
-    
     @SerializedName("releaseDate")
     val releaseDate: String?,
-    
     @SerializedName("trackTimeMillis")
     val durationMs: Long?,
-    
     @SerializedName("episodeUrl")
     val audioUrl: String?,
-    
     @SerializedName("collectionName")
     val podcastName: String?,
-    
     @SerializedName("artworkUrl600")
     val artworkUrl: String?,
-    
     @SerializedName("artworkUrl60")
     val artworkUrlSmall: String?
 ) {
@@ -51,7 +43,6 @@ data class Episode(
 data class EpisodeSearchResponse(
     @SerializedName("resultCount")
     val resultCount: Int,
-    
     @SerializedName("results")
     val results: List<Episode>
 )

@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
 import com.podcast.search.databinding.ItemPodcastBinding
-import com.podcast.search.model.Podcast
+import com.podcast.search.model.Podcast // Corrected import
 
 class PodcastAdapter(
     private val onPodcastClick: (Podcast) -> Unit

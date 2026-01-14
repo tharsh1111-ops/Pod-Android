@@ -1,3 +1,0 @@
-com.podcast.search.test
-style WhiteBackgroundDialogTheme
-style WhiteBackgroundTheme

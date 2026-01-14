@@ -8,7 +8,6 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
@@ -22,45 +21,179 @@ import java.lang.String;
 
 public final class ActivityMainBinding implements ViewBinding {
   @NonNull
-  private final CoordinatorLayout rootView;
+  private final View rootView;
 
-  @NonNull
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout-sw320dp/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   */
+  @Nullable
+  public final TextView coverScreenTitle;
+
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout-sw320dp/</li>
+   * </ul>
+   */
+  @Nullable
   public final RecyclerView episodesRecyclerView;
 
-  @NonNull
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout-sw320dp/</li>
+   * </ul>
+   */
+  @Nullable
   public final TextView errorText;
 
   @NonNull
   public final RecyclerView podcastsRecyclerView;
 
-  @NonNull
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout-sw320dp/</li>
+   * </ul>
+   */
+  @Nullable
   public final ProgressBar progressBar;
 
-  @NonNull
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout-sw320dp/</li>
+   * </ul>
+   */
+  @Nullable
   public final MaterialButton recentButton;
 
-  @NonNull
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout-sw320dp/</li>
+   * </ul>
+   */
+  @Nullable
   public final TextView resultsTitle;
 
-  @NonNull
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout-sw320dp/</li>
+   * </ul>
+   */
+  @Nullable
   public final MaterialButton searchButton;
 
-  @NonNull
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout-sw320dp/</li>
+   * </ul>
+   */
+  @Nullable
   public final TextInputEditText searchEditText;
 
-  @NonNull
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout-sw320dp/</li>
+   * </ul>
+   */
+  @Nullable
   public final MaterialToolbar toolbar;
 
-  @NonNull
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout-sw320dp/</li>
+   * </ul>
+   */
+  @Nullable
   public final MaterialButton trendingButton;
 
-  private ActivityMainBinding(@NonNull CoordinatorLayout rootView,
-      @NonNull RecyclerView episodesRecyclerView, @NonNull TextView errorText,
-      @NonNull RecyclerView podcastsRecyclerView, @NonNull ProgressBar progressBar,
-      @NonNull MaterialButton recentButton, @NonNull TextView resultsTitle,
-      @NonNull MaterialButton searchButton, @NonNull TextInputEditText searchEditText,
-      @NonNull MaterialToolbar toolbar, @NonNull MaterialButton trendingButton) {
+  private ActivityMainBinding(@NonNull View rootView, @Nullable TextView coverScreenTitle,
+      @Nullable RecyclerView episodesRecyclerView, @Nullable TextView errorText,
+      @NonNull RecyclerView podcastsRecyclerView, @Nullable ProgressBar progressBar,
+      @Nullable MaterialButton recentButton, @Nullable TextView resultsTitle,
+      @Nullable MaterialButton searchButton, @Nullable TextInputEditText searchEditText,
+      @Nullable MaterialToolbar toolbar, @Nullable MaterialButton trendingButton) {
     this.rootView = rootView;
+    this.coverScreenTitle = coverScreenTitle;
     this.episodesRecyclerView = episodesRecyclerView;
     this.errorText = errorText;
     this.podcastsRecyclerView = podcastsRecyclerView;
@@ -75,7 +208,7 @@ public final class ActivityMainBinding implements ViewBinding {
 
   @Override
   @NonNull
-  public CoordinatorLayout getRoot() {
+  public View getRoot() {
     return rootView;
   }
 
@@ -100,17 +233,14 @@ public final class ActivityMainBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.cover_screen_title;
+      TextView coverScreenTitle = ViewBindings.findChildViewById(rootView, id);
+
       id = R.id.episodesRecyclerView;
       RecyclerView episodesRecyclerView = ViewBindings.findChildViewById(rootView, id);
-      if (episodesRecyclerView == null) {
-        break missingId;
-      }
 
       id = R.id.errorText;
       TextView errorText = ViewBindings.findChildViewById(rootView, id);
-      if (errorText == null) {
-        break missingId;
-      }
 
       id = R.id.podcastsRecyclerView;
       RecyclerView podcastsRecyclerView = ViewBindings.findChildViewById(rootView, id);
@@ -120,47 +250,26 @@ public final class ActivityMainBinding implements ViewBinding {
 
       id = R.id.progressBar;
       ProgressBar progressBar = ViewBindings.findChildViewById(rootView, id);
-      if (progressBar == null) {
-        break missingId;
-      }
 
       id = R.id.recentButton;
       MaterialButton recentButton = ViewBindings.findChildViewById(rootView, id);
-      if (recentButton == null) {
-        break missingId;
-      }
 
       id = R.id.resultsTitle;
       TextView resultsTitle = ViewBindings.findChildViewById(rootView, id);
-      if (resultsTitle == null) {
-        break missingId;
-      }
 
       id = R.id.searchButton;
       MaterialButton searchButton = ViewBindings.findChildViewById(rootView, id);
-      if (searchButton == null) {
-        break missingId;
-      }
 
       id = R.id.searchEditText;
       TextInputEditText searchEditText = ViewBindings.findChildViewById(rootView, id);
-      if (searchEditText == null) {
-        break missingId;
-      }
 
       id = R.id.toolbar;
       MaterialToolbar toolbar = ViewBindings.findChildViewById(rootView, id);
-      if (toolbar == null) {
-        break missingId;
-      }
 
       id = R.id.trendingButton;
       MaterialButton trendingButton = ViewBindings.findChildViewById(rootView, id);
-      if (trendingButton == null) {
-        break missingId;
-      }
 
-      return new ActivityMainBinding((CoordinatorLayout) rootView, episodesRecyclerView, errorText,
+      return new ActivityMainBinding(rootView, coverScreenTitle, episodesRecyclerView, errorText,
           podcastsRecyclerView, progressBar, recentButton, resultsTitle, searchButton,
           searchEditText, toolbar, trendingButton);
     }

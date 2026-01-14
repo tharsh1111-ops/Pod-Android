@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.podcast.search.adapter.EpisodeAdapter
 import com.podcast.search.adapter.PodcastAdapter
 import com.podcast.search.databinding.ActivityMainBinding
+import com.podcast.search.model.Podcast
 import com.podcast.search.viewmodel.PodcastViewModel
 
 class MainActivity : AppCompatActivity() {
@@ -39,7 +40,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun setupRecyclerViews() {
         // Podcasts RecyclerView
-        podcastAdapter = PodcastAdapter { podcast ->
+        podcastAdapter = PodcastAdapter { podcast: Podcast ->
             viewModel.getEpisodes(podcast.id)
             binding.resultsTitle.text = podcast.title ?: "Episodes"
         }

@@ -1,7 +1,0 @@
-com.podcast.search.test.app-androidTest-0 C:\AndroidProjects\PodcastAppAndroid\app\build\generated\res\resValues\androidTest\debug
-com.podcast.search.test.app-updated_navigation_xml-1 C:\AndroidProjects\PodcastAppAndroid\app\build\generated\updated_navigation_xml\debugAndroidTest
-com.podcast.search.test.app-mergeDebugAndroidTestResources-2 C:\AndroidProjects\PodcastAppAndroid\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
-com.podcast.search.test.app-mergeDebugAndroidTestResources-3 C:\AndroidProjects\PodcastAppAndroid\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
-com.podcast.search.test.app-debugAndroidTest-4 C:\AndroidProjects\PodcastAppAndroid\app\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources
-com.podcast.search.test.app-jetified-core-1.5.0-5 C:\Users\thars\.gradle\caches\9.0-milestone-1\transforms\10e829715f2400a5f8945a95476fc107\transformed\jetified-core-1.5.0\res
-com.podcast.search.test.app-jetified-annotation-experimental-1.3.0-6 C:\Users\thars\.gradle\caches\9.0-milestone-1\transforms\2d77e4c39a354bd64fa589c74887a93b\transformed\jetified-annotation-experimental-1.3.0\res

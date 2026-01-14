@@ -1,15 +1,15 @@
 package com.podcast.search.adapter
 
 import android.content.Intent
-import android.net.Uri
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
+import com.podcast.search.PlayerActivity
 import com.podcast.search.databinding.ItemEpisodeBinding
-import com.podcast.search.model.Episode
+import com.podcast.search.model.Episode // Corrected import
 import java.text.SimpleDateFormat
 import java.util.Locale
 
@@ -58,8 +58,13 @@ class EpisodeAdapter : ListAdapter<Episode, EpisodeAdapter.EpisodeViewHolder>(Ep
                 
                 listenButton.setOnClickListener {
                     episode.audioUrl?.let { url ->
-                        val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
-                        binding.root.context.startActivity(intent)
+                        val context = binding.root.context
+                        val intent = Intent(context, PlayerActivity::class.java).apply {
+                            putExtra("AUDIO_URL", url)
+                            putExtra("EPISODE_TITLE", episode.title)
+                            putExtra("EPISODE_IMAGE_URL", episode.getImageUrl())
+                        }
+                        context.startActivity(intent)
                     }
                 }
             }

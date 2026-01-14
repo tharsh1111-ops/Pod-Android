@@ -10,6 +10,9 @@ color surface
 color text_primary
 color text_secondary
 color white
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id cover_screen_title
 id episodeDate
 id episodeDuration
 id episodeImage
@@ -18,6 +21,7 @@ id episodeTitle
 id episodesRecyclerView
 id errorText
 id listenButton
+id player_view
 id podcastAuthor
 id podcastEpisodeCount
 id podcastImage
@@ -32,8 +36,11 @@ id toolbar
 id trendingButton
 id viewEpisodesButton
 layout activity_main
+layout activity_player
 layout item_episode
 layout item_podcast
+mipmap ic_launcher
+mipmap ic_launcher_round
 string app_name
 string episode_artwork
 string listen
